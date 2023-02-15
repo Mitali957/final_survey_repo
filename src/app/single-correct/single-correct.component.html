@@ -1,0 +1,19 @@
+<div class="radio-container">
+  <div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Question</mat-label>
+      <input
+        matInput
+        [formControl]="questionControl"
+        placeholder="Enter your question"
+      />
+    </mat-form-field>
+  </div>
+  <div class="radio">
+  <mat-radio-group aria-label="Select an option" [formControl]="selectedOption">
+    <mat-radio-button  value="1">Yes</mat-radio-button>
+    <mat-radio-button value="2">No</mat-radio-button>
+ 
+  </mat-radio-group>
+</div>
+</div>
